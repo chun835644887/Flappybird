@@ -1,0 +1,135 @@
+ul li {
+    list-style: none;
+}
+.cleanfix {/*ie浏览器*/
+    *zoom:1;
+}
+.cleanfix::after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0%;
+    visibility: hidden;
+    content: '';
+}
+.myBird {
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 29px;
+    background-image: url("../img/bird0.png");
+    top: 150px;
+}
+#fallBird {
+    width: 343px;
+    height: 480px;
+    margin: 0 auto;
+    background-image: url("../img/bg.jpg");
+    position: relative;
+    overflow: hidden;
+}
+#start {
+    position: relative;
+    top:105px;
+}
+#logo {
+    position: absolute;
+    top: 45px;
+    margin: 0;
+}
+#start ul li {
+    float: left;
+}
+#start .logoText {
+    width: 236px;
+    height: 77px;
+    background: url("../img/head.png");
+}
+#start .logoBird {
+    width: 40px;
+    height: 29px;
+    background-image: url("../img/bird0.png");
+}
+#start button {
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    background-image: url("../img/start.jpg");
+    top:230px;
+    border: none;
+    padding: 0;
+    left: 129px;
+}
+
+/*banner*/
+#banner {
+    width: 686px;
+    height: 14px;
+    background-image: url("../img/banner.jpg");
+    position: absolute;
+    top: 423px;
+    background-repeat: repeat-x;
+    left: 0px;
+}
+#banner ul li {
+    float: left;
+}
+#gameOver {
+    position: relative;
+    display: none;
+    z-index: 3;
+}
+#gameOver .overTop{
+    width: 211px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 67px;
+    background-image: url("../img/game_over.png");
+}
+#gameOver .overMessage {
+    position: absolute;
+    width: 269px;
+    height: 135px;
+    background-image: url("../img/message.jpg");
+    top: 197px;
+    left: 40px;
+
+}
+#gameOver .overMessage span {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+}
+#gameOver .overMessage .nowScore {
+    top: 33px;
+}
+#gameOver .overMessage  .histroyScore {
+    top: 81px;
+}
+.waterPipe {
+    position: absolute;
+    right: -62px;
+    width: 62px;
+}
+.waterPipe div {
+    width: 62px;
+}
+#bigScore  {
+    position: absolute;
+    z-index: 3;
+    height: 39px;
+    width: 343px;
+    text-align: center;
+    margin: 0 auto;
+}
+.reStart {
+    width: 96px;
+    height: 33px;
+    position: absolute;
+    top: 355px;
+    background-image: url("../img/ok.jpg");
+    border: none;
+    left: 123px;
+    padding: 0px;
+}
