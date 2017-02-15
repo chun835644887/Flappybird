@@ -169,12 +169,11 @@ window.onload = function () {
             myScore.innerHTML = "";
             var scoreStr = score.toString();
             for (i = 0; i < scoreStr.length; i++) {
-                myScore.innerHTML = "<img src='img/" + scoreStr[i] + ".jpg'/>";
+                myScore.innerHTML += "<img src='img/" + scoreStr[i] + ".jpg'/>";
             }
 
         },
         gameOver: function () {
-            fallBird.grade=12;
             var history = fallBird.getHistory(" bestScore");
             if (history < fallBird.grade) {
                 fallBird.setHistory(" bestScore", fallBird.grade, 367);
